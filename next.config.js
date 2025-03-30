@@ -5,6 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   // swcMinify is now the default in Next.js 13+
   // experimental.appDir is no longer needed as it's the default in Next.js 14+
+  output: 'standalone',
   eslint: {
     // Disable ESLint during production builds
     ignoreDuringBuilds: true,
