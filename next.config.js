@@ -13,6 +13,8 @@ const nextConfig = {
   typescript: {
     // Disable TypeScript during production builds
     ignoreBuildErrors: true,
+    // Don't check types during build
+    tsconfigPath: 'tsconfig.json',
   },
   webpack: (config) => {
     config.resolve.alias['#'] = path.join(__dirname, '.');

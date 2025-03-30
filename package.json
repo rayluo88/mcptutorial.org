@@ -3,7 +3,7 @@
   "packageManager": "npm@10.2.4",
   "scripts": {
     "build": "next build && cp server.js .next/standalone/",
-    "cloudflare-build": "npm install -g tailwindcss && npm install tailwindcss && next build",
+    "cloudflare-build": "npm install tailwindcss && npm install -D typescript@5.4.5 @types/react @types/node && node cloudflare-build.js && next build",
     "dev": "next dev",
     "lint": "next lint",
     "lint-staged": "lint-staged",
