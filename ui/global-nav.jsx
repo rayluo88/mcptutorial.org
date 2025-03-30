@@ -1,6 +1,5 @@
 'use client';
 
-import { demos } from '#/lib/demos';
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
